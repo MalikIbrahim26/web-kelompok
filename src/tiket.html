@@ -4,38 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script src="LoadComponent.js" defer></script>
     <title>Admin</title>
 </head>
 <body>
-    <div class="navbar bg-accent">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-3xl">Dashboard Admin</a>
-      </div>
-      <div class="flex-none ">
-        <button class="btn btn-square btn-ghost" onclick="logout()">
-          <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 24 24" 
-          fill="currentColor" 
-          class="size-8">
-              <path fill-rule="evenodd" d="M16.5 3.75a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V15a.75.75 0 0 0-1.5 0v3.75a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3V9A.75.75 0 1 0 9 9V5.25a1.5 1.5 0 0 1 1.5-1.5h6ZM5.78 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06l-1.72-1.72H15a.75.75 0 0 0 0-1.5H4.06l1.72-1.72a.75.75 0 0 0 0-1.06Z" clip-rule="evenodd" />
-            </svg>              
-        </button>
-      </div>
-    </div>
+    <!-- Start Navbar -->
+    <div id="navbar"></div>
+    <!-- End Navbar -->
+
     <div class="flex w-[100%] ">
       <!-- sidebar start -->
-      <div class="w-[15%] ">
-        <ul class="menu bg-base-200 rounded-box w-56 h-screen">
-          <li><a href="dashboard.html">Beranda</a></li>
-          <li><a href="konservasi.html">Konservasi</a></li>
-          <li><a href="pendidikan.html">Pendidikan</a></li>
-          <li><a href="wisata.html">Wisata</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="tiket.html">Beli Tiket</a></li>
-        </ul>
-      </div>
+        <div id="sidemenu" class="pr-8"></div>
       <!-- sidebar end -->
+
       <!-- main content start -->
       <div class="w-[85%]">
         <p class="text-3xl">Pengelolaan Tiket</p>
